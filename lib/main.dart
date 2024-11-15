@@ -3,5 +3,5 @@ import 'package:language_learning_app/myapp.dart';
 
 void main()
 {
-  runApp(MyApp());
+  runApp(const MyApp());
 }

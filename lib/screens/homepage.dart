@@ -21,26 +21,26 @@ class HomePage extends StatelessWidget
           (
             color: const Color(0xffED8F31),
             title: "Numbers",
-            nextPage: const NumbersPage(),
+            nextPage:  NumbersPage(),
            
           ),
           ButtonInHomepage
           (
             color: const Color(0xff528032),
             title: "Family Member",
-            nextPage: const NumbersPage(),
+            nextPage:  NumbersPage(),
           ),
           ButtonInHomepage
           (
             color: const Color(0xff7D40A2),
             title: "Colors",
-            nextPage: const NumbersPage(),
+            nextPage:  NumbersPage(),
           ),
           ButtonInHomepage
           (
             color: const Color(0xff47A5CB),
             title: "Phrases",
-            nextPage: const NumbersPage(),
+            nextPage:  NumbersPage(),
           ),
         ],
       ),

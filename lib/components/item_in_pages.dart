@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 class ItemInPages extends StatelessWidget 
 {
   String image;
-  String engWord;
-  String yabWord;
+  String engWord;//الكلمه بالانجليزيه
+  String yabWord;//الكلمه باليابانى
   ItemInPages({super.key,required this.image,required this.engWord,required this.yabWord});
 
   @override

@@ -1,14 +1,12 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
-class ItemInPages extends StatelessWidget 
+class ItemInPhrasesPage extends StatelessWidget 
 {
-  String image;
-  String engWord;//الكلمه بالانجليزيه
-  String yabWord;//الكلمه باليابانى
+  String desc;//الكلمه بالانجليزيه
   String sound;
-  Color color;  // صوت نطق الكلمه
-  ItemInPages({super.key,required this.image,required this.engWord,required this.yabWord,required this.sound,required this.color});
+  Color color;  // 
+  ItemInPhrasesPage({super.key,required this.desc,required this.sound,required this.color});
 
   @override
   Widget build(BuildContext context) 
@@ -21,22 +19,20 @@ class ItemInPages extends StatelessWidget
       (
         children: 
         [
-          Container(color: const Color(0xffFFF4D9),child: Image.asset(image)),
           Padding
           (
             padding: const EdgeInsets.all(10),
-            child: Column
+            child: Text
             (
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: 
-              [
-                Text(engWord,style: const TextStyle(fontSize: 18,color: Colors.white),),
-                Text(yabWord,style: const TextStyle(fontSize: 18,color: Colors.white),)
-              ],
+              desc
+              ,style: const TextStyle
+              (
+                fontSize: 18,color: Colors.white
+              ),
             ),
           ),
           const Spacer(flex: 1,),
-           Padding
+          Padding
           (
             padding: const EdgeInsets.all(10),
             child: IconButton
@@ -54,8 +50,8 @@ class ItemInPages extends StatelessWidget
               //splashColor: Colors.red,
             ),
           )
-        ],
-      ),
+        ]
+      ),  
     );
   }
 }

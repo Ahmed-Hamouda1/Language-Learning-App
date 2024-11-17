@@ -4,6 +4,7 @@ import 'package:language_learning_app/components/stander_appbar.dart';
 import 'package:language_learning_app/screens/colors.dart';
 import 'package:language_learning_app/screens/family_members.dart';
 import 'package:language_learning_app/screens/numbers.dart';
+import 'package:language_learning_app/screens/phrases.dart';
 
 class HomePage extends StatelessWidget 
 {
@@ -38,12 +39,12 @@ class HomePage extends StatelessWidget
             title: "Colors",
             nextPage:  ColorsScreen(),
           ),
-          // ButtonInHomepage
-          // (
-          //   color: const Color(0xff47A5CB),
-          //   title: "Phrases",
-          //   nextPage:  NumbersPage(),
-          //),
+          ButtonInHomepage
+          (
+            color: const Color(0xff47A5CB),
+            title: "Phrases",
+            nextPage:  PhrasesPage(),
+          ),
         ],
       ),
     );

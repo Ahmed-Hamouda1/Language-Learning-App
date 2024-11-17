@@ -6,8 +6,9 @@ class ItemInPages extends StatelessWidget
   String image;
   String engWord;//الكلمه بالانجليزيه
   String yabWord;//الكلمه باليابانى
-  String sound;  // صوت نطق الكلمه
-  ItemInPages({super.key,required this.image,required this.engWord,required this.yabWord,required this.sound});
+  String sound;
+  Color color;  // صوت نطق الكلمه
+  ItemInPages({super.key,required this.image,required this.engWord,required this.yabWord,required this.sound,required this.color});
 
   @override
   Widget build(BuildContext context) 
@@ -15,7 +16,7 @@ class ItemInPages extends StatelessWidget
     return Container
     (
       height: 100,
-      color: const Color(0xffED8F31),
+      color: color,
       child: Row
       (
         children: 
@@ -49,7 +50,7 @@ class ItemInPages extends StatelessWidget
               (
                 Icons.play_arrow,color: Colors.white,
               ),
-              iconSize: 20,
+              iconSize: 25,
               //splashColor: Colors.red,
             ),
           )

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:language_learning_app/components/button_in_homepage.dart';
 import 'package:language_learning_app/components/stander_appbar.dart';
+import 'package:language_learning_app/screens/colors.dart';
+import 'package:language_learning_app/screens/family_members.dart';
 import 'package:language_learning_app/screens/numbers.dart';
 
 class HomePage extends StatelessWidget 
@@ -24,18 +26,18 @@ class HomePage extends StatelessWidget
             nextPage:  NumbersPage(),
            
           ),
-          // ButtonInHomepage
-          // (
-          //   color: const Color(0xff528032),
-          //   title: "Family Member",
-          //   nextPage:  NumbersPage(),
-          // ),
-          // ButtonInHomepage
-          // (
-          //   color: const Color(0xff7D40A2),
-          //   title: "Colors",
-          //   nextPage:  NumbersPage(),
-          // ),
+          ButtonInHomepage
+          (
+            color: const Color(0xff528032),
+            title: "Family Member",
+            nextPage:  FamilyMembers(),
+          ),
+          ButtonInHomepage
+          (
+            color: const Color(0xff7D40A2),
+            title: "Colors",
+            nextPage:  ColorsScreen(),
+          ),
           // ButtonInHomepage
           // (
           //   color: const Color(0xff47A5CB),

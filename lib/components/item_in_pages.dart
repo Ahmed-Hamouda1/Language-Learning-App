@@ -10,7 +10,7 @@ class ItemInPages extends StatelessWidget
   @override
   Widget build(BuildContext context) 
   {
-    return  Container
+    return Container
     (
       height: 100,
       color: const Color(0xffED8F31),
@@ -33,10 +33,20 @@ class ItemInPages extends StatelessWidget
             ),
           ),
           const Spacer(flex: 1,),
-          const Padding
+           Padding
           (
             padding: EdgeInsets.all(10),
-            child: Icon(Icons.play_arrow,color: Colors.white,),
+            child: IconButton
+            (
+              onPressed: (){},
+              icon: const Icon
+              (
+                Icons.play_arrow,color: Colors.white,
+              ),
+              iconSize: 20,
+              splashColor: Colors.red,
+
+            ),
           )
         ],
       ),

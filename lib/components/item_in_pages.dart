@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
 class ItemInPages extends StatelessWidget 
@@ -5,7 +6,8 @@ class ItemInPages extends StatelessWidget
   String image;
   String engWord;//الكلمه بالانجليزيه
   String yabWord;//الكلمه باليابانى
-  ItemInPages({super.key,required this.image,required this.engWord,required this.yabWord});
+  String sound;  // صوت نطق الكلمه
+  ItemInPages({super.key,required this.image,required this.engWord,required this.yabWord,required this.sound});
 
   @override
   Widget build(BuildContext context) 
@@ -38,14 +40,17 @@ class ItemInPages extends StatelessWidget
             padding: EdgeInsets.all(10),
             child: IconButton
             (
-              onPressed: (){},
+              onPressed: ()
+              {
+                final player=AudioPlayer();
+                player.play(AssetSource(sound)); 
+              },
               icon: const Icon
               (
                 Icons.play_arrow,color: Colors.white,
               ),
               iconSize: 20,
-              splashColor: Colors.red,
-
+              //splashColor: Colors.red,
             ),
           )
         ],

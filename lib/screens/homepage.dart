@@ -24,25 +24,24 @@ class HomePage extends StatelessWidget
             nextPage:  NumbersPage(),
            
           ),
-          ButtonInHomepage
-          (
-            color: const Color(0xff528032),
-            title: "Family Member",
-            nextPage:  NumbersPage(),
-          ),
-          ButtonInHomepage
-          (
-            color: const Color(0xff7D40A2),
-            title: "Colors",
-            nextPage:  NumbersPage(),
-          ),
-          ButtonInHomepage
-          (
-            color: const Color(0xff47A5CB),
-            title: "Phrases",
-            nextPage:  NumbersPage(),
-          ),
-          
+          // ButtonInHomepage
+          // (
+          //   color: const Color(0xff528032),
+          //   title: "Family Member",
+          //   nextPage:  NumbersPage(),
+          // ),
+          // ButtonInHomepage
+          // (
+          //   color: const Color(0xff7D40A2),
+          //   title: "Colors",
+          //   nextPage:  NumbersPage(),
+          // ),
+          // ButtonInHomepage
+          // (
+          //   color: const Color(0xff47A5CB),
+          //   title: "Phrases",
+          //   nextPage:  NumbersPage(),
+          //),
         ],
       ),
     );
